@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  height: 10vh;
+  background-color: rgb(77, 71, 71);
+  color: white;
+
+  ul {
+    display: flex;
+    height: 100%;
+  }
+  
+  li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.contents_2a {
+
+  height: calc(90vh - 20px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  grid-column-gap: 10px;
+
+  background-color: rgb(230, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 20px;
+
+
+  h2 {
+    font-size: 32px;
+    color: black;
+
+    
+
+  }
+
+  h4 {
+    font-size: 26px;
+    color: black;
+    padding-top: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    color: grey;
+    padding-top: 5px;
+    line-height: 19px;
+  }
+
+  ul {
+    padding-top: 10px;
+
+    li {
+      list-style-type: circle;
+      padding-top: 5px;
+      position: relative;
+      left: 20px;
+    }
+  }
+
+  hr {
+    border-color: rgb(25, 211, 25);
+    margin-right: 80%;
+  }
+
+  .overskrift {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    span {
+      color: rgb(18, 187, 18);
+    }
+  }
+
+  .beskrivelse {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .ydelser {
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    display: flex;
+    background-color: rgb(18, 187, 18);
+    height: 50px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    color: white;
+  }
+
+  .billede_container {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .billede1 {
+      grid-column: 1/2;
+      padding: 10px;
+
+    }
+
+    .billede2 {
+      grid-column: 2/3;
+      padding: 10px;
+    }
+  }
+
+}
+
+
+.contents_2b {
+
+  height: calc(90vh - 20px);
+  background-color: rgb(230, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 20px;
+
+  .background_2b {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 177, 30, 0.637);
+  color: white;
+  display: grid;
+  text-align: center;
+
+  grid-template-rows: 1fr 1fr;
+
+    .reviews_title {
+      grid-row: 1/2;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+      h4 {
+        font-size: 42px;
+        align-self: end;
+      }
+
+      hr {
+        display: block; 
+        height: 1px;
+        width: 50%;
+        border: 0; 
+        border-top: 3px solid rgb(255, 255, 255);
+        margin: 1em 0; 
+        padding: 0;
+        justify-self: center;
+      }
+
+
+    }
+
+    .reviews_text {
+      grid-row: 2/3;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding-left: 50px;
+      padding-right: 50px;
+      letter-spacing: 2px;
+      line-height: 30px;
+
+      .reviews_text_content {
+
+
+        p {
+          font-size: 18px;
+        }
+  
+        .pad {
+          padding-top: 10px;
+        }
+      }
+
+      .reviews_text_nav {
+        padding-left: 40%;
+        padding-right: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+
+        .reviews_button {
+          background-color: white;
+          aspect-ratio: 1;
+          border-radius: 50%;;
+          cursor: pointer;
+          opacity: 0.6;
+        }
+
+        #active {
+          opacity: 1;
+        }
+      }
+
+
+    }
+  }
+}
+
